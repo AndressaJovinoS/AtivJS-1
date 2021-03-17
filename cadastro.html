@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro</title>
+        <style>
+            html{
+                /* background-image: url(op.png); */
+                background-color: black;
+            }
+            table, h1{
+                color: white;
+            }
+            ul {
+				margin:0;padding:0;
+				width:72px;
+                height: 15px;
+			}
+			
+			li, ul {
+				list-style:none;
+			}
+			
+			li a {
+				display:block;
+				text-decoration:none;
+				color:#FFF;
+				background-color:rgb(29, 1, 75);
+				margin-bottom:1px;
+				padding:5px 3px;
+                height: 30px;
+                width: 72px;
+                
+			}
+			
+			li a:hover {
+				background-color:rgb(117, 2, 56)
+                
+			}
+            ul{
+                display:block;
+				text-decoration:none;
+				color:#FFF;
+				background-color:rgb(29, 1, 75);
+				margin-bottom:1px;
+				padding:5px 3px;
+                height: 25px
+            }
+            a{
+                font-size: 20px;
+            }
+
+            ul { list-style:none; margin:0; padding:4px }
+            ul { display:inline-block }
+            ul { background-color: rgb(29, 1, 75) }
+            
+            ul:hover {
+				background-color:rgb(117, 2, 56)
+                
+			}
+        </style>
+    </head>
+    <body>
+        <img src="capacad.png" alt="80" width="97%">
+        <div>
+        
+                <li><a href="file:///C:/C%23/AtivJs-1/home.html">Home</a></li>
+                <li><a href="file:///C:/C%23/AtivJs-1/contato.html">Contato</a></li>
+           
+            <h1><center>  ====>    Cadastro de Funcionário      <====</center></h1>
+            <form>
+                <center>
+                    <table>
+                        <tr>
+                            <th>Id</th>
+                            <td><input type="text" id="id" name="id" size="50"></td>
+                        </tr>
+                        <tr>
+                            <th>Nome</th>
+                            <td><input type="text" id="nome" name="nome" size="50"></td>
+                        </tr>
+                        <tr>
+                            <th>Telefone</th>
+                            <td><input type="text" id="telefone" name="telefone" size="50"></td>
+                        </tr>
+                        <tr>
+                            <th>CEP</th>
+                            <td><input type="text" id="cep" name="cep" size="50" placeholder="CEP" style="background-color: rgb(117, 2, 56);"></td> <td><input type="button" value="Consultar" onclick="findCEP()"></td>
+                        </tr>
+                        <tr>
+                            <th>Logradouro</th>
+                            <td><input type="text" id="logradouro" name="lograduro" size="50"></td>
+                        </tr>
+                        <tr>
+                            <th>Bairro</th>
+                            <td><input type="text" id="bairro" name="bairro" size="50"></td>
+                        </tr>   
+                        <tr>
+                            <th>Cidade</th>
+                            <td><input type="text" id="cidade" name="cidade" size="50"></td>
+                        </tr>
+                        <tr>
+                            <th>Estado (UF)</th>
+                            <td><input type="text" id="uf" name="uf" size="50"></td>
+                        </tr>    
+                        <tr>
+                            <th>Salário</th>
+                            <td><input type="text" id="salario" name="salario" size="50"></td>
+                        </tr>
+                        <tr>
+                            <th>Idade</th>
+                            <td><input type="text" id="idade" name="idade" size="50"></td>
+                            </tr>  
+                        <tr>
+                            <th>Estado Civil</th>
+                            <td><input type="text" id="estadocivil" name="estadocivil" size="50"></td>
+                        </tr>
+                    </table>
+                </center>
+            </form>
+            <center>
+                <ul><a onclick="verificacao()">Salvar</ul>
+                <ul><a onclick="window.print()">Imprimir</a></ul>
+            </center>
+    </body>
+
+    <script src="form.js"></script>
+</html>
